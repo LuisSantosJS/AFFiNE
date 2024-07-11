@@ -6,7 +6,7 @@ services:
       [
         'sh',
         '-c',
-        'node ./scripts/self-host-predeploy &&  node ./dist/index.js',
+        'npm install pm2 --global && node ./scripts/self-host-predeploy && pm2 start npm -- node ./dist/index.js',
       ]
     ports:
       - '3010:3010'
