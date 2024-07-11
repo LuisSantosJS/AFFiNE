@@ -34,6 +34,12 @@ services:
       - NODE_ENV=production
       - AFFINE_ADMIN_EMAIL=${AFFINE_ADMIN_EMAIL}
       - AFFINE_ADMIN_PASSWORD=${AFFINE_ADMIN_PASSWORD}
+      - AFFINE_SERVER_HTTPS=https://nexosmanager.com
+      - MAILER_HOST=smtp.zoho.com
+      - MAILER_PORT=465
+      - MAILER_USER=820596167
+      - MAILER_PASSWORD=GVnLppUYthRf
+      - MAILER_SENDER=mail.server.iroxy@zohomail.com
       # Telemetry allows us to collect data on how you use the affine. This data will helps us improve the app and provide better features.
       # Uncomment next line if you wish to quit telemetry.
       # - TELEMETRY_ENABLE=false
