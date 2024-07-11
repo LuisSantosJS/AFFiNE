@@ -6,7 +6,7 @@ COPY ./packages/frontend/admin/dist /app/static/admin
 WORKDIR /app
 
 RUN apt-get update && \
-  apt-get install -y --no-install-recommends openssl && \
+  apt-get install -y --no-install-recommends openssl && npm install --global pm2\
   rm -rf /var/lib/apt/lists/*
 
 CMD ["node", "--import", "./scripts/register.js", "./dist/index.js"]
