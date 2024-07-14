@@ -1,4 +1,4 @@
-import { CloseIcon, DownloadIcon } from '@blocksuite/icons/rc';
+import { CloseIcon } from '@blocksuite/icons/rc';
 import clsx from 'clsx';
 import { useCallback, useState } from 'react';
 
@@ -37,10 +37,6 @@ export function AppDownloadButton({
       className={clsx([styles.root, styles.rootPadding, className])}
       onClick={handleClick}
     >
-      <div className={clsx([styles.label])}>
-        <DownloadIcon className={styles.icon} />
-        <span className={styles.ellipsisTextOverflow}>Download App</span>
-      </div>
       <div
         className={styles.closeIcon}
         onClick={e => {
