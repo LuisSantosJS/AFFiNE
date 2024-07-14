@@ -51,7 +51,7 @@ const getPlayList = (t: Translate): Array<PlayListItem> => [
           a: (
             <a
               className={styles.link}
-              href="https://ai.affine.pro"
+              href="#"
               target="_blank"
               rel="noreferrer"
             />

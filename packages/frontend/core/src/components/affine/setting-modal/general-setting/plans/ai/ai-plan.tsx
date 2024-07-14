@@ -41,7 +41,7 @@ export const AIPlan = () => {
           }),
         })
       : null;
-
+  return null;
   return (
     <AIPlanLayout
       caption={
@@ -63,7 +63,7 @@ export const AIPlan = () => {
                 className={styles.learnAIButton}
                 displayedFrequency="monthly"
               />
-              <a href="https://ai.affine.pro" target="_blank" rel="noreferrer">
+              <a href="#" target="_blank" rel="noreferrer">
                 <Button className={styles.learnAIButton}>
                   {t['com.affine.payment.ai.pricing-plan.learn']()}
                 </Button>

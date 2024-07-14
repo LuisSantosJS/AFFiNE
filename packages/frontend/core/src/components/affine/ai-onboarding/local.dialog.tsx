@@ -38,7 +38,7 @@ const FooterActions = ({ onDismiss }: { onDismiss: () => void }) => {
 
   return (
     <div className={styles.footerActions}>
-      <a href="https://ai.affine.pro" target="_blank" rel="noreferrer">
+      <a href="#" target="_blank" rel="noreferrer">
         <Button
           className={styles.actionButton}
           type="plain"
@@ -73,6 +73,7 @@ export const AIOnboardingLocal = () => {
   const notSignedIn = loginStatus !== 'authenticated';
 
   useEffect(() => {
+    return;
     if (!notSignedIn) return;
     if (notifyId) return;
     clearTimeout(timeoutRef.current);
