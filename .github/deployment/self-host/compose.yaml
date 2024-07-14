@@ -37,6 +37,8 @@ services:
       - MAILER_USER=820596167
       - MAILER_PASSWORD=GVnLppUYthRf
       - MAILER_SENDER=mail.server.iroxy@zohomail.com
+      - STRIPE_API_KEY=sk_test_51OoQvBG2DietuiL1ePrrguBNt46qYrYcaFHPrX92rrgVJ43Gz9G7du7rToFPMFaRXxDHZ9TkH1Vb0L4Yj7FZ916U00v63VP9JV
+      - STRIPE_WEBHOOK_KEY=we_1PcQyGG2DietuiL1V7q6OZ3Z
       # Telemetry allows us to collect data on how you use the affine. This data will helps us improve the app and provide better features.
       # Uncomment next line if you wish to quit telemetry.
       # - TELEMETRY_ENABLE=false
