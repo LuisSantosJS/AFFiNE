@@ -1,7 +1,6 @@
 import { Scrollable } from '@affine/component';
 import { PageDetailSkeleton } from '@affine/component/page-detail-skeleton';
 import { AIProvider } from '@affine/core/blocksuite/presets/ai';
-import { PageAIOnboarding } from '@affine/core/components/affine/ai-onboarding';
 import { AIIsland } from '@affine/core/components/pure/ai-island';
 import { useAppSettingHelper } from '@affine/core/hooks/affine/use-app-setting-helper';
 import { RecentDocsService } from '@affine/core/modules/quicksearch';
@@ -294,7 +293,6 @@ const DetailPageImpl = memo(function DetailPageImpl() {
         }
       />
       <GlobalPageHistoryModal />
-      <PageAIOnboarding />
     </>
   );
 });
